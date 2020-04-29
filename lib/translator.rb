@@ -2,7 +2,9 @@
 
 def load_library (file_name)
   require 'yaml'
-hash = YAML.load(File.read(file_name))
+newhash = {}
+newhash.push(YAML.load(File.read(file_name)) )
+return newhash
 # code goes here
 end
 
